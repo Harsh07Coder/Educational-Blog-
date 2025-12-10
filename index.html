@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBlog - Learn & Grow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e3d59;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e3d59;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      width: 30%;
+      text-align: center;
+    }
+
+    .category h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* Tags */
+    .tags {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e3d59;
+      color: #fff;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    /* Blog Posts */
+    .post {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Comments */
+    .comments {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+
+    .comment {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .comment:last-child {
+      border-bottom: none;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #1e3d59;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background: #3c5a77;
+    }
+
+    footer {
+      background: #1e3d59;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EduBlog</h1>
+    <p>Learn & Grow with Knowledge</p>
+    <nav>
+      <a href="#categories">Categories</a>
+      <a href="#tags">Tags</a>
+      <a href="#posts">Posts</a>
+      <a href="#comments">Comments</a>
+    </nav>
+  </header>
+
+  <!-- Categories Section -->
+  <section id="categories">
+    <h2>Categories</h2>
+    <div class="categories">
+      <div class="category">
+        <h3>Technology</h3>
+        <p>Latest trends in AI, software, and gadgets.</p>
+      </div>
+      <div class="category">
+        <h3>Health</h3>
+        <p>Tips for wellness, fitness, and nutrition.</p>
+      </div>
+      <div class="category">
+        <h3>Finance</h3>
+        <p>Guides on saving, investing, and managing money.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tags Section -->
+  <section id="tags">
+    <h2>Tags</h2>
+    <div class="tags">
+      <span class="tag">AI</span>
+      <span class="tag">Nutrition</span>
+      <span class="tag">Investing</span>
+      <span class="tag">Fitness</span>
+      <span class="tag">Software</span>
+      <span class="tag">Savings</span>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section id="posts">
+    <h2>Recent Posts</h2>
+    <div class="post">
+      <h3>Understanding Artificial Intelligence</h3>
+      <p>Artificial Intelligence (AI) is transforming industries by automating tasks, improving efficiency, and enabling new innovations...</p>
+    </div>
+    <div class="post">
+      <h3>Top 5 Nutrition Tips for a Healthy Life</h3>
+      <p>Eating a balanced diet, staying hydrated, and including fresh fruits and vegetables are essential for maintaining good health...</p>
+    </div>
+    <div class="post">
+      <h3>Beginner’s Guide to Investing</h3>
+      <p>Investing can help grow your wealth over time. Start small, diversify your portfolio, and focus on long-term goals...</p>
+    </div>
+  </section>
+
+  <!-- Comments Section -->
+  <section id="comments">
+    <h2>Comments</h2>
+    <div class="comments">
+      <div class="comment">
+        <p><strong>Alice:</strong> Great article on AI! Very informative.</p>
+      </div>
+      <div class="comment">
+        <p><strong>Bob:</strong> The nutrition tips are simple and practical. Thanks!</p>
+      </div>
+    </div>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="comment">Comment</label>
